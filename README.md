@@ -69,6 +69,10 @@ Register the server for Claude Code in `~/.claude.json`, under the top-level `mc
 
 Replace both paths with your own. Each new Claude Code session starts its own server process.
 
+## Skill
+
+`skills/win-computer-use/SKILL.md` is a Claude Code skill with win-cu's core notes: coordinate frames, batching, tools, refusals, error messages and configuration. The server's instructions refer to it. Its Other section is left for your own rules. To install it, copy the `skills/win-computer-use` folder to `~/.claude/skills/`.
+
 ## Configuration
 
 Settings are read from `config.json` next to `server.py`, or from the file named by the `WINCU_CONFIG` environment variable. Each key replaces the default from `DEFAULT_CONFIG` in `wincu/core.py`; a list replaces the whole default list. The shipped `config.json` sets `max_image_edge`, `show_banner` and `yield_to_user`.
@@ -134,3 +138,4 @@ Run each script directly, for example `python tests/test_unit.py`.
 | `wincu/apps.py` | Installed apps (`shell:AppsFolder`), usage statistics, launching |
 | `wincu/keys.py` | Key-chord parsing: X keysym names to virtual-key codes |
 | `tests/` | Test scripts and the C# test windows |
+| `skills/win-computer-use/` | Claude Code skill: core notes for using win-cu |
