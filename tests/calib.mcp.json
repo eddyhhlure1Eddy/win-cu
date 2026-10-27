@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "calib": {
+      "command": "C:/path/to/python.exe",
+      "args": ["-u", "-X", "utf8", "C:/path/to/win-cu/tests/calib_server.py"]
+    }
+  }
+}
